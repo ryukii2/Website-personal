@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectDinasKesehatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LogoPemkot.png" alt="Logo Perusahaan" class="logosby">
+            <div class="logo-text">
+                <h2 class="logo">Dinas Kesehatan</h2>
+                <h3 class="logo1">Kota Surabaya</h3>
+            </div>
+        </div>
+        
+        <nav class="navigation">
+            <a href="#">Beranda</a>
+            <a href="#">Pengumuman</a>
+            <a href="#">Pengajuan</a>
+            <a href="#">Profil</a>
+            <button class="btn-login">Login</button>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlayMenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Beranda</a>
+            <a href="#">Pengumuman</a>
+            <a href="#">Pengajuan</a>
+            <a href="#">Profil</a>
+            <button class="btn-login">Login</button>
+        </div>
+    </div>
+
+    <div class="login-box">
+        <div class="form-box login">
+            <h2>Masuk</h2>
+            <h3><p>Gunakan email dan kata sandi yang terdaftar <br>
+                untuk mengakses layanan kami</p></h3>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Lupa password?</a>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">Login</button>
+                </div>
+
+                <div class="register">
+                    <p>belum mempunyai akun? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
